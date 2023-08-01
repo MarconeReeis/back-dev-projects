@@ -10,7 +10,7 @@ $password = ''; // Senha do banco de dados
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo 'DB Con Sucesso !';
+    //echo 'DB Con Sucesso !';
 } catch (PDOException $e) {
     die("Erro ao concetar DB: " . $e->getMessage());
 }
